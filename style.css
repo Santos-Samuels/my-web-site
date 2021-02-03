@@ -1,0 +1,401 @@
+:root {
+    --color-black: #000000;
+    --color-blue: #003399;
+    --color-dark-blue: #000066;
+    --color-dark-gray: #333333;
+    --color-gray: #464545;
+    --color-light-gray: #F8F6F5;
+    --background: url("/images/background.jpg");
+    font-size: 60%;
+}
+
+@font-face {
+    font-family: 'Orkney';
+    src: url(fonts/orkney-regular.otf);
+
+    font-family: 'Archivo';
+    src: url(fonts/Archivo-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Archivo;
+}
+
+.containers {
+    width: 90vw;
+    font-display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* NAV BAR */
+header nav {
+    font-size: 2.5rem;
+    padding: 2rem;
+    width: 30rem;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    right: -300px;
+    z-index: 1;
+
+    background-color: var(--color-light-gray);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+    transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(-300px);
+}
+
+input[type="checkbox"]:checked ~ label {
+    transform: rotate(90deg);
+}
+
+header nav a {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: Orkney;
+    display: block;
+}
+
+header nav a:hover {
+    color: var(--color-dark-blue);
+    border-left: 2px solid var(--color-dark-blue);
+}
+
+header input {
+    display: none;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    padding: 0.8rem;
+    font-size: 2.8rem;
+    cursor: pointer;
+    background-color: var(--color-light-gray);
+    border-radius: 0.8rem;
+    
+    right: 2.5rem;
+    position: fixed;
+    z-index: 2;
+    
+    transition: all 0.3s;
+}
+
+
+
+/* PÁGINA INICIAL */
+#container-home .content {
+    margin: 3rem 3rem 2rem;
+}
+
+#container-home .content h1{
+    font-family: Orkney;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#container-home .content h1 span {
+    color: var(--color-dark-blue);
+}
+
+#container-home .content p {
+    color: var(--color-dark-gray);
+    font-size: 2rem;
+    max-width: 52rem;
+}
+
+#container-home .footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#container-home .footer #content {
+    margin: 1rem 0 3rem 3rem;
+}
+
+#container-home .footer #content a img{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#container-home #lovely-text {
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 0;
+}
+
+#container-home .footer #myself{
+    width: 21rem;
+    margin-right: -40px;
+}
+
+
+/* PÁGINA PROJETOS */
+#container-projects {
+    padding-top: 2rem;
+}
+#container-projects div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-projects article {
+    
+    margin: 2rem;
+    font-size: 1.5rem;
+    width: 30rem;
+    background: var(--color-light-gray);
+}
+
+#container-projects article h2 {
+    text-align: center;
+    font-weight: normal;
+    color: var(--color-light-gray);
+    background: var(--color-dark-gray);
+    padding: 1rem;
+    border-radius: 5px 5px 0 0;
+}
+
+#container-projects article div {
+    padding: 2rem;
+    box-shadow: 1px 1px 3px var(--color-dark-gray);
+}
+
+#container-projects article div span {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: var(--color-dark-blue);
+}
+
+#container-projects article div footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#container-projects article div footer a {
+    text-decoration: none;
+    margin-top: 1rem;
+    background: var(--color-gray);
+    color: var(--color-light-gray);
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+#container-projects article div footer #code:hover {
+    background: var(--color-dark-gray);
+}
+
+#container-projects article div footer #demo {
+    background: var(--color-blue);
+}
+
+#container-projects article div footer #demo:hover {
+    background: var(--color-dark-blue);
+}
+
+
+/* PÁGINA SOBRE */
+#container-about {
+    padding-top: 2rem;
+}
+
+#container-about h1, #container-projects h1{
+    width: 10rem;
+    font-family: Orkney;
+    color: var(--color-black);
+    font-size: 2.3rem;
+    font-weight: lighter;
+    margin: 8rem 0 3rem 3rem;
+    border-bottom: 2px solid var(--color-dark-blue);
+    text-align: center;
+}
+
+#container-about .content {
+    width: 200px;
+    height: 230px;
+    margin: 9rem auto 4rem auto;
+    background-color: var(--color-light-gray);
+    border-bottom: 2px solid var(--color-dark-blue);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+    box-shadow: 0px 3px 5px 0px rgba(184,175,184,1);
+}
+
+#container-about #mid-content {
+    width: 250px;
+    height: 300px;
+}
+
+#container-about #hexagono {
+    position: absolute;
+    top: -32px;
+    left: 33%;
+    position: relative;
+}
+
+#container-about #hexagono img {
+    width: 8rem;
+}
+
+#container-about p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (min-width: 720px) {
+    header label {
+        display: none;
+    }
+
+    header nav {
+        font-size: 25px;
+        padding: 0;
+
+        position: fixed;
+        left: 130px;
+        right: 80px;
+        top: 0;
+        z-index: 1;
+
+        display: flex;
+        justify-content: left;
+    }
+
+    header nav a {
+        margin: 0;
+        padding: 20px;
+        background-color: white;
+    }
+
+    header nav a:hover {
+        border-left: 0;
+        border-bottom: 2px solid var(--color-contrast);
+    }
+    #container-home .content {
+        margin: 130px 0 0 130px;
+    }
+
+    #container-home .content h1{
+        font-size: 80px;
+    }
+
+    #container-home .content p {
+        font-size: 25px;
+        margin-top: 20px;
+        max-width: 700px;
+    }
+
+    #container-home .footer {
+        margin: 0;
+    }
+
+    #container-home .footer #content {
+        margin: 80px 0 0 130px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #container-home .footer #content a img {
+        margin: 0 25px 0 0;
+        width: 32px;
+    }
+
+    #container-home .footer #content p {
+        margin: 0;
+        padding-left: 150px;
+        font-size: 20px;
+    }
+
+    #container-home .footer #myself {
+        width: 410px;
+        margin: 0;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    
+    /* PROJETOS*/
+    #container-projects {
+        height: 100%;
+        margin: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container-projects div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    /* SOBRE */
+    #container-about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        margin: auto;
+        padding: 70px;
+    }
+
+    #container-about h1, #container-projects h1 {
+        display: none;
+    }
+
+    #container-about .content {
+        width: 230px;
+        height: 280px;
+        margin: 2rem;
+    }
+
+    #container-about .content span {
+        margin-left: -2px;
+    }
+
+    #container-about #mid-content {
+        width: 300px;
+        height: 370px;
+    }
+
+    #container-about #mid-content span {
+        margin-left: -6px;
+    }
+}
+    
