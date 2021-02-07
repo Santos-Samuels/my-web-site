@@ -170,20 +170,23 @@ header label {
     font-size: 1.5rem;
     width: 30rem;
     background: var(--color-light-gray);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #container-projects article h2 {
     text-align: center;
-    font-weight: normal;
-    color: var(--color-light-gray);
-    background: var(--color-dark-gray);
-    padding: 1rem;
-    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+    color: var(--color-dark-gray);
+    background: var(--color-light-gray);
+    padding: 1.5rem;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #container-projects article div {
-    padding: 2rem;
-    box-shadow: 1px 1px 3px var(--color-dark-gray);
+    padding: 3rem;
 }
 
 #container-projects article div span {
@@ -199,7 +202,7 @@ header label {
 
 #container-projects article div footer a {
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 2rem;
     background: var(--color-gray);
     color: var(--color-light-gray);
     padding: 1rem;
