@@ -141,6 +141,10 @@ header label {
     margin-bottom: 1rem;
 }
 
+#container-home h2 {
+    color: red;
+}
+
 #container-home #lovely-text {
     margin-top: 3rem;
     font-size: 2rem;

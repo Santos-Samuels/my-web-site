@@ -3,92 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
+
     <title>Hello!!</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 
 <body>
-
-    <header>
-        <input type="checkbox" id="menu-button" value="false">
-        <label for="menu-button">&#9776</label>
-        <nav class="menu">
-            <a href="">INÍCIO</a>
-            <a href="#container-projects">PROJETOS</a>
-            <a href="#container-about">SOBRE</a>
-            <a href="">TIMELINE</a>
-        </nav>
-    </header>
-
-    <section class="containers" id="container-home">
-        <div class="content">
-            <h1>Olá</h1>
-            <h1>Eu sou <span>Samuel</span>.</h1>
-            <p>Apaixonado por design gráfico e 
-                programação. <br>Me descobri na área de 
-                programação web e mobile. <br>Quero me 
-                tornar um programador full-stack.</p>
-            <h2><br> Site em desenvolvimento, algumas funções pode não funcionar.</h2>
-        </div>
+    <div id="app">
+        <header>
+            <input type="checkbox" id="menu-button" value="false">
+            <label for="menu-button">&#9776</label>
+            <nav class="menu">
+                <a href="#container-home">INÍCIO</a>
+                <a href="#container-projects">PROJETOS</a>
+                <a href="#container-about">SOBRE</a>
+                <a href="">TIMELINE</a>
+            </nav>
+        </header>
     
-        <div class="footer">
-            <div id="content">
-                <a href="https://www.instagram.com/santossamuel18"><img src="images/instagram.png" alt="instagram"></a>
-                <a href="mailto:santossamuelplus@gmail.com?subject=Oi Samuel :)"><img src="images/gmail.png" alt="gmail"></a>
-                <a href="https://github.com/Santos-Samuels"><img src="images/github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/samuel-santos-0aaa2a1b3"><img src="images/linkedin.png" alt="linkedin"></a>
-                <p class="myself" id="lovely-text">Made with &#10084 and &#9749</p>
+        <section class="containers" id="container-home">
+            <div class="content">
+                <h1>Olá</h1>
+                <h1>Eu sou <span>Samuel</span>.</h1>
+                <p>Apaixonado por design gráfico e 
+                    programação. <br>Me descobri na área de 
+                    programação web e mobile. <br>Quero me 
+                    tornar um programador full-stack.</p>
+                <h2><br> Uma versão totalmente refatorada desta página está em desenvolvimento usando Vue.js</h2>
             </div>
-            <img class="myself" src="images/myself.png" alt="myself" id="myself">
-        </div>
-    </section>
-
-    <section class="containers" id="container-projects">
-        <h1>PROJETOS</h1>
-
-        <div id="projectsDiv">
-    
-        </div>
         
-    </section>
-
-    <section class="containers" id="container-about">
-        <h1>SOBRE</h1>
-
-        <div class="content">
-            <div id="hexagono">
-                <img src="images/heart.png" alt="hexagono">
+            <div class="footer">
+                <div id="content">
+                    <a href="https://www.instagram.com/santossamuel18"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="mailto:santossamuelplus@gmail.com?subject=Oi Samuel :)"><img src="images/gmail.png" alt="gmail"></a>
+                    <a href="https://github.com/Santos-Samuels"><img src="images/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/samuel-santos-0aaa2a1b3"><img src="images/linkedin.png" alt="linkedin"></a>
+                    <p class="myself" id="lovely-text">Made with &#10084 and &#9749</p>
+                </div>
+                <img class="myself" src="images/myself.png" alt="myself" id="myself">
             </div>
-            <p>Curto tecnologias, 
-                Dota 2 e seriados 
-                na Netflix.</p>
-        </div>
-
-        <div class="content" id="mid-content">
-            <div id="hexagono">
-                <img src="images/rocket.png" alt="hexagono">
+        </section>
+    
+        <section class="containers" id="container-projects">
+            <h1>PROJETOS</h1>
+    
+            <div id="projectsDiv">
+        
             </div>
-            <p>Cursando 
-                Baharelado em 
-                Sistemas de 
-                Informação no IFBA 
-                campus Feira de 
-                Santana e estou no 
-                quarto semestre.</p>
-        </div>
-
-        <div class="content">
-            <div id="hexagono">
-                <img src="images/laptop.png" alt="hexagono">
+            
+        </section>
+    
+        <section class="containers" id="container-about">
+            <h1>SOBRE</h1>
+    
+            <div class="content">
+                <div id="hexagono">
+                    <img src="images/heart.png" alt="hexagono">
+                </div>
+                <p>Curto tecnologias, 
+                    Dota 2 e seriados 
+                    na Netflix.</p>
             </div>
-            <p>Estou aprendendo 
-                HTML, CSS, JavaScript, 
-                React e MySQL.
-            </p>
-        </div>
-    </section>
+    
+            <div class="content" id="mid-content">
+                <div id="hexagono">
+                    <img src="images/rocket.png" alt="hexagono">
+                </div>
+                <p>Cursando 
+                    Baharelado em 
+                    Sistemas de 
+                    Informação no IFBA 
+                    campus Feira de 
+                    Santana e estou no 
+                    quarto semestre.</p>
+            </div>
+    
+            <div class="content">
+                <div id="hexagono">
+                    <img src="images/laptop.png" alt="hexagono">
+                </div>
+                <p>Estou aprendendo 
+                    HTML, CSS, JavaScript, 
+                    React e MySQL.
+                </p>
+            </div>
+        </section>
+    </div>
 
+    <script src="script/vue.js"></script>
     <script src="script/projectsInfo.js"></script>
     <script src="script/app.js"></script>
 </body>
